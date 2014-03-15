@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.license  = { :type => 'Beerware', :text => 'If we meet some day, and you think this stuff is worth it, you can buy me a beer in return.' }
   s.homepage = 'https://github.com/inamiy/YIStrictEdgePanGesture'
   s.author   = { 'Yasuhiro Inami' => 'inamiy@gmail.com' }
-  s.summary  = "Tweak UINavigationController's interactivePopGestureRecognizer for better content vertical-scrolling experience, especially for left-handers."
+  s.summary  = "Never get angry with UINavigationController's interactivePopGestureRecognizer."
   s.screenshots = [ "https://raw.github.com/inamiy/YIStrictEdgePanGesture/master/Screenshots/screenshot1.png" ]
   s.source   = { :git => 'https://github.com/inamiy/YIStrictEdgePanGesture.git', :tag => "#{s.version}" }
   s.source_files = 'Classes/*.{h,m}'
