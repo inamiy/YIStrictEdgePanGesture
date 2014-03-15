@@ -1,0 +1,20 @@
+PODS:
+  - JRSwizzle (1.0)
+  - ViewUtils (1.1.2)
+  - YIStrictEdgePanGesture (1.0.0):
+    - JRSwizzle
+    - ViewUtils
+
+DEPENDENCIES:
+  - YIStrictEdgePanGesture (from `../`)
+
+EXTERNAL SOURCES:
+  YIStrictEdgePanGesture:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
+  ViewUtils: e0b147bd0b2acfbf6b030f6a32b0c2bdd959df68
+  YIStrictEdgePanGesture: 90a3d1b861ceab9f6de370f8961cf277a3431f55
+
+COCOAPODS: 0.29.0
