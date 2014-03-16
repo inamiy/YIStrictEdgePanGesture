@@ -80,11 +80,11 @@ Try UINavigationController's interactivePopGestureRecognizer.</string>
             </objects>
             <point key="canvasLocation" x="1187" y="-259"/>
         </scene>
-        <!--Navigation Controller - Strict=NO-->
+        <!--Navigation Controller - Default-->
         <scene sceneID="34X-TH-QdQ">
             <objects>
                 <navigationController definesPresentationContext="YES" id="GaB-qq-ECO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Strict=NO" image="second" id="fAN-ky-YqB"/>
+                    <tabBarItem key="tabBarItem" title="Default" image="second" id="fAN-ky-YqB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Du7-E6-byk">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -125,13 +125,14 @@ Try UINavigationController's interactivePopGestureRecognizer.</string>
                     <connections>
                         <segue destination="Apx-Zp-cEa" kind="relationship" relationship="viewControllers" id="Xaj-8d-0gy"/>
                         <segue destination="GaB-qq-ECO" kind="relationship" relationship="viewControllers" id="8Qz-D5-t2H"/>
+                        <segue destination="aHB-bd-Owx" kind="relationship" relationship="viewControllers" id="Tsd-5r-ROx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="180"/>
         </scene>
-        <!--Table View Controller - Strict = NO-->
+        <!--Table View Controller - Default-->
         <scene sceneID="LBp-UP-hxc">
             <objects>
                 <tableViewController id="X6V-f0-7tg" customClass="TableViewController" sceneMemberID="viewController">
@@ -144,14 +145,13 @@ Try UINavigationController's interactivePopGestureRecognizer.</string>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TjE-Zr-Jsu">
-                                    <rect key="frame" x="20" y="20" width="280" height="132"/>
+                                    <rect key="frame" x="20" y="20" width="280" height="122"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="lis-fc-zv0">
-                                            <rect key="frame" x="13" y="11" width="280" height="111"/>
+                                            <rect key="frame" x="13" y="20" width="280" height="82"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <string key="text">gesture.usesStrictMode=NO
-(default)
+                                            <string key="text">Default
 
 Try UINavigationController's interactivePopGestureRecognizer.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -195,7 +195,7 @@ Try UINavigationController's interactivePopGestureRecognizer.</string>
                             <outlet property="delegate" destination="X6V-f0-7tg" id="DfS-4N-a0x"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Strict = NO" id="pDO-YL-eOw"/>
+                    <navigationItem key="navigationItem" title="Default" id="pDO-YL-eOw"/>
                     <connections>
                         <outlet property="tutorialView" destination="bRp-po-a3q" id="fv6-ex-XlB"/>
                     </connections>
@@ -203,6 +203,94 @@ Try UINavigationController's interactivePopGestureRecognizer.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYB-t8-soS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1187" y="549"/>
+        </scene>
+        <!--Navigation Controller - Steal Delegate-->
+        <scene sceneID="i6X-Bw-eBK">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="aHB-bd-Owx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Steal Delegate" image="second" id="a1H-eK-rwj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eJy-6l-XBd">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hQt-w7-lS0" kind="relationship" relationship="rootViewController" id="igC-4n-czO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDV-Zn-J3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="1271"/>
+        </scene>
+        <!--Table View Controller - Steal Delegate-->
+        <scene sceneID="fuB-db-viQ">
+            <objects>
+                <tableViewController id="hQt-w7-lS0" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HtV-iF-HKN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="9w4-kz-lzV">
+                            <rect key="frame" x="0.0" y="108" width="320" height="1000"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mug-P2-Tfm">
+                                    <rect key="frame" x="20" y="20" width="280" height="122"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="xdn-VX-hES">
+                                            <rect key="frame" x="13" y="20" width="280" height="82"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <string key="text">Default + StealDelegate
+
+Try UINavigationController's interactivePopGestureRecognizer.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <sections>
+                            <tableViewSection id="pxQ-Ht-C4U">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="mpC-fq-O5g" style="IBUITableViewCellStyleDefault" id="BO5-IV-eXj">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BO5-IV-eXj" id="g3B-Hu-rbv">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Push" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mpC-fq-O5g">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hQt-w7-lS0" kind="push" identifier="PushSegue" id="O1q-0E-IyK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="hQt-w7-lS0" id="0ou-5A-PYe"/>
+                            <outlet property="delegate" destination="hQt-w7-lS0" id="oe2-vc-ES8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Steal Delegate" id="lnG-gN-HR5"/>
+                    <connections>
+                        <outlet property="tutorialView" destination="9w4-kz-lzV" id="MBc-e0-0Gu"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWl-Db-dW9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187" y="1271"/>
         </scene>
     </scenes>
     <resources>
@@ -216,6 +304,7 @@ Try UINavigationController's interactivePopGestureRecognizer.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="igC-4n-czO"/>
         <segue reference="6hL-AR-tLT"/>
         <segue reference="EVI-pK-DWD"/>
     </inferredMetricsTieBreakers>
